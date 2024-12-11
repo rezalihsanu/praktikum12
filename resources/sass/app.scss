@@ -1,9 +1,14 @@
-// Fonts
-// @import url("https://fonts.bunny.net/css?family=Nunito");
+// // Fonts
+// @import url('https://fonts.bunny.net/css?family=Nunito');
 
-// Variables
-// @import "variables";
+// // Variables
+// @import 'variables';
 
 // Bootstrap
-@import "bootstrap/scss/bootstrap";
+@import 'bootstrap/scss/bootstrap';
+
 @import "bootstrap-icons/font/bootstrap-icons.css";
+
+input.is-invalid {
+    border: 1px solid red;
+}
