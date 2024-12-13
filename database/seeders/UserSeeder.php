@@ -2,25 +2,35 @@
 
 namespace Database\Seeders;
 
+use Illuminate\Database\Console\Seeds\WithoutModelEvents;
 use Illuminate\Database\Seeder;
-use Illuminate\Support\Facades\Hash;
 use Illuminate\Support\Facades\DB;
+
 
 class UserSeeder extends Seeder
 {
     /**
      * Run the database seeds.
-     *
-     * @return void
      */
-    public function run()
+    public function run(): void
     {
         DB::table('users')->insert([
+        [
             'name' => 'Administrator',
             'email' => 'admin@admin',
-            'password' => Hash::make('adminadmin'), // Menggunakan bcrypt melalui Hash facade
-            'created_at' => now(),
-            'updated_at' => now(),
+            'password' => bcrypt('adminadmin'),
+        ],
+
+        [
+            'name' => 'rezal',
+            'email' => 'rezal@admin',
+            'password' => bcrypt('rezalrezal'),
+        ]
+
+
+
         ]);
+
+
     }
 }
