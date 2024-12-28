@@ -100,8 +100,7 @@
                                     @endif
                                 </div>
                                 <!-- Input File CV -->
-                                <input type="file" class="form-control" id="cv" name="cv"
-                                    accept=".pdf,.doc,.docx">
+                                <input type="file" class="form-control" id="cv" name="cv" accept=".pdf,.doc,.docx">
 
                             </div>
                             <hr>
